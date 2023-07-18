@@ -1,0 +1,117 @@
+.materials{
+    padding: 120px 0;
+    &__content {
+        display: flex;
+        
+        margin: 0 auto;
+        max-width: 1440px;
+        padding-left: 80px;
+    }
+    &__left {
+        max-width: 40%;
+    }
+    &__right {
+        padding-left: 110px;
+        display: flex;
+        flex-wrap: wrap;
+        max-height: 614px;
+        flex-direction: column;
+        position: relative;
+        &::before {
+            content: '';
+            position: absolute;
+            width: 49%;
+            height: 60px;
+            border-top-left-radius: 20px;
+            background-color: $bg;
+            top: 84px;
+            left: 100%;
+        }
+    }
+    &__img-1 {
+     padding-bottom: 45px;
+     padding-right: 45px;
+     border-radius: 14.25px;
+     position: relative;
+     &_blur {
+        position: absolute;
+      /*  &::after{
+        content: '';*/
+            width: 176px;
+            height: 30px;
+            bottom: 30px;
+            flex-shrink: 0;
+            border-radius: 29px;
+            opacity: 0.5;
+            z-index: -1;
+            background: url(../images/shadow-1.png);
+            background: no-repeat;
+           
+        }
+     }
+    
+    
+    &__img-2 {
+        padding-right: 45px;
+        border-radius: 14.25px;
+        position: relative;
+        &_blur {
+           position: absolute;
+         /*  &::after{
+           content: '';*/
+               width: 176px;
+               height: 30px;
+               bottom: 30px;
+               flex-shrink: 0;
+               border-radius: 29px;
+               opacity: 0.5;
+               z-index: -1;
+               background: url(../images/shadow-1.png);
+               background: no-repeat;
+             
+           }
+        }
+    
+    &__img-3 {
+        margin-top: 140px;
+        object-fit: contain;
+        border-radius: 20px;
+        
+       }
+  
+       &__shadow-1 {
+        position: absolute;
+        width: 176px;
+height: 183px;
+flex-shrink: 0;
+border-radius: 29px;
+opacity: 0.5;
+background: url(../images/shadow-1.png);
+background: gray;
+bottom: 295px;
+left: 10%;
+ background-repeat: no-repeat;
+filter: blur(25px);
+        width: 100%;
+        height: 50px;
+       }
+       &__shadow-2 {
+        position: absolute;
+        width: 100%;
+        height: 100px;
+        filter: blur(25px);
+       }
+       &__shadow-3 {
+        position: absolute;
+        width: 90%;
+        height: 30px;
+        flex-shrink: 0;
+        border-radius: 49px;
+        opacity: 0.5;
+        background: url(../images/shadow-3.png);
+        background: lightgray 50%;
+        background-repeat: no-repeat;
+        object-fit: cover;
+        filter: blur(25px);
+       }
+}

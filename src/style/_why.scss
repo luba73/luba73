@@ -1,0 +1,47 @@
+.why {
+    &__content {
+        padding: 5px 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__header {
+        @include font(600, 42px, $black, 130%);
+        flex-basis: 15%;
+    }
+    &__list {
+        display: flex;
+        justify-content: space-between;
+        flex-basis: 75%;
+    }
+    &__item {
+        flex-basis: 31%;
+    }
+    &__subHeader {
+        @include font(600, 24px);
+        opacity: 0.8;
+        margin-bottom: 20px;
+    }
+    &__text {
+        @include font(400, 16px, $black, 185%);
+       background-color: aqua;
+        margin-bottom: -255px;
+    }
+    &__link {
+        display: flex;
+        align-items: center;
+        @include font(400, 14px, $orange);
+        width: 45%;
+        svg {
+            width: 48px;
+            height: 24px;
+            transition: all 0.4s ease-in;
+            transform: translateX(5px);
+        }
+        &:hover {
+            svg {
+                transform: translateX(25px);
+            }
+        }
+    }
+}

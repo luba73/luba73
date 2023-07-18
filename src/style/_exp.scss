@@ -1,0 +1,47 @@
+.exp {
+    padding: 120px 0;
+
+    &__content {
+        display: flex;
+        justify-content: space-between;
+        max-width: 1440px;
+        margin: 0 auto;
+        padding-right: 140px;
+    }
+
+    &__left {
+        
+        padding: 56px 0 3px 0;
+        position: relative;
+    }
+    &__img {
+        border-radius: 50%;
+          width: 100%;
+          height: 100%;
+    }
+
+    &__subHeader {
+        text-transform: uppercase;
+        @include font(600, 18px, $orange);
+        letter-spacing: 3.15px;
+        margin-bottom: 20px;
+    }
+    &__header {
+        text-transform: capitalize;
+        @include font(700, 42px, $orange, 130%);
+        margin-bottom: 20px;
+
+    }
+    &__text {
+        @include font(400, 18px, $black, 185%);
+        opacity: 0.8;
+        margin-bottom: 24px;
+
+    }
+
+    &__right {
+        padding-top: 260px;
+        margin-left: 30%;
+       
+    }
+}

@@ -1,0 +1,22 @@
+* {
+    box-sizing: border-box;
+    font-family: 'gilroy', sans-serif;
+}
+
+body, h1, h2, h2, h4, h5, p, ul, ol {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+}
