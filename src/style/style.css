@@ -135,10 +135,22 @@ a {
   text-align: center;
   padding: 20px;
   border: 1px solid rgb(197, 25, 91);
-  display: none;
 }
-.header__addres:hover header__link__addres {
+.header__addres {
+  position: relative;
   display: block;
+}
+.header__addres .header__link__addres {
+  position: absolute;
+  top: 30px;
+  left: 0;
+  opacity: 0;
+  z-index: -1;
+  transition: all 0.4s ease-in;
+}
+.header__addres:hover .header__link__addres {
+  z-index: 1;
+  opacity: 1;
 }
 .header__link:not(:last-child) {
   margin-right: 65px;
