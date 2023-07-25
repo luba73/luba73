@@ -1,11 +1,12 @@
 $black: #1e1e1e;
 $white: #fff;
-$orange: #E58411;
+$orange: rgb(197, 25, 91);
 $aqua: #00D6C9;
 $blue: #0D1B39;
 $bg: #F7F7F7;
 $bg-card: #FAFAFA;
 $grey: #7c7c7c;
+$roza: rgb(197, 25, 91);
 
 @mixin font( $weght, $size: 14px,  $color: $black, $lineHeight: 0) {
     @if $size != 14px {

@@ -18,14 +18,14 @@
         flex-basis: 31%;
     }
     &__subHeader {
-        @include font(600, 24px);
-        opacity: 0.8;
+        @include font(700, 34px);
+       
         margin-bottom: 20px;
     }
     &__text {
-        @include font(400, 16px, $black, 185%);
-       background-color: aqua;
-        margin-bottom: -255px;
+        @include font(700, 16px, $black, 185%);
+    
+       margin-bottom: 40px;
     }
     &__link {
         display: flex;

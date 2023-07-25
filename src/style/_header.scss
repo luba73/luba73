@@ -82,7 +82,24 @@
         }
 
     }
+&__link {
 
+    &__addres {
+        width: 400px;
+        height: 210px;
+        @include font(400, 24px, $black, 160%);
+        text-align: center;
+       padding: 20px;
+       border: 1px solid $orange;
+       display: none;
+    }
+
+}
+&__addres:hover{
+    header__link__addres {
+       display: block;
+    }
+}
     &__link:not(:last-child) {
         margin-right: 65px;
     }

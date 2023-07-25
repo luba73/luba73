@@ -6,9 +6,15 @@
     <title>lady Lux</title>
     <link rel="stylesheet" href="./resources/swiper.css">
     <link rel="stylesheet" href="./resources/normalize.css">
+   
     <link rel="stylesheet" href="main.css">
+
+    <script defer src="main.js"></script>
+   
     <script defer src="./resources/add.js"></script>
     <script defer src="./resources/swiper.js"></script>
+    <script src="http://maps.api.2gis.ru/2.0/loader.js?skin=light" data-id="dgLoader"></script>
+    <script defer src="./js/main.js"></script>
     <script defer src="app.js"></script>
 </head>
 <body>
@@ -29,8 +35,10 @@
                     </ul>
                 </div>
                 <a href="#Shop" class="header__link">Акции</a>
-                <a href="#About" class="header__link">Адрес</a>
-                <a href="#Contact" class="header__link">Телефон</a>
+                <a href="#addres" class="header__link header__addres">Адрес</a>
+                <div id="addres" class="header__link__addres">г Саратов, ул Чапаева,59, на первом этаже Крытого рынка,налево от внутреннего фонтана Крестьянкам, ещё раз налево вдоль стены 2 место</div>
+             
+                <a href="tel:+79172040930" class="header__link">+7(917)204-09-30</a>
             </nav>
             <button class="header__bag">
                 <svg>
@@ -51,6 +59,7 @@
         <div class="container hero__content">
             <div class="hero__box">
                 <img src="./images/kup-3.jpg" alt="kupalnik" class="hero__back hero__back__img">
+                
                 <h1 class="hero__header">
                     Что сегодня сделает меня счастливой?
                 </h1>
@@ -67,75 +76,6 @@
                 </form>
             </div>
         </div>
-        <!-- <button class="hero__popUp hero__popUp_1">
-            <span class="hero__circle">
-                
-                <div class="hero__popUp_drop">
-                    <label for="vaza1"  class="hero__popUp_label-1 label hero__popUp_check">          
-                        <input type="radio" name="vaza" id="vaza1" class="formInput">
-                    </label>
-                    <label for="vaza2"  class="hero__popUp_label-2 label">         
-                        <input type="radio" name="vaza" id="vaza2" class="formInput">
-                    </label>
-                    <label for="vaza3"  class="hero__popUp_label-3 label">
-                        <input type="radio" name="vaza" id="vaza3" class="formInput">
-                    </label>
-                </div>
-            </span>
-        </button>
-        <button class="hero__popUp hero__popUp_2">
-            <span class="hero__circle">
-                <div class="hero__popUp_drop">
-                    <label for="divan1"  class="hero__popUp_label-1 label">
-
-                        <input type="radio" name="divan" id="divan1" class="formInput">
-                    </label>
-                    <label for="divan2"  class="hero__popUp_label-2 label">
-
-                        <input type="radio" name="divan" id="divan2" class="formInput">
-                    </label>
-                    <label for="divan3"  class="hero__popUp_label-3 label">
-
-                        <input type="radio" name="divan" id="divan3" class="formInput">
-                    </label>
-                </div>
-            </span>
-        </button>
-        <button class="hero__popUp hero__popUp_3">
-            <span class="hero__circle">
-                <div class="hero__popUp_drop"><label for="stol1"  class="hero__popUp_label-1 label">
-
-                    <input type="radio" name="stol" id="stol1" class="formInput">
-                </label>
-                <label for="stol2"  class="hero__popUp_label-2 label">
-
-                    <input type="radio" name="stol" id="stol2" class="formInput">
-                </label>
-                <label for="stol3"  class="hero__popUp_label-3 label">
-
-                    <input type="radio" name="stol" id="stol3" class="formInput">
-                </label>
-                </div>
-            </span>
-        </button>
-        <button class="hero__popUp hero__popUp_4">
-            <span class="hero__circle">
-                <div class="hero__popUp_drop">
-                    <label for="kust1"  class="hero__popUp_label-1 label">
-                        <input type="radio" name="kust" id="kust1" class="formInput">
-
-                    </label>
-                    <label for="kust2"  class="hero__popUp_label-2 label">
-
-                        <input type="radio" name="kust" id="kust2" class="formInput">
-                    </label>
-                    <label for="kust3"  class="hero__popUp_label-3 label">
-
-                        <input type="radio" name="kust" id="kust3" class="formInput">
-                    </label>
-                </div>
-            </span>
-        </button> -->
     </section>
 
     <section class="why">
@@ -183,13 +123,12 @@
         <div class="container">
             <div class="product__content">
                 <div class="swiper product__swiper">
-                    <!-- Additional required wrapper -->
+                    
                 
-                    <!-- If we need navigation buttons -->
                     <div class="swiper-button-prev product__arrow_prev"></div>
                     <div class="swiper-button-next product__arrow_next"></div>
                     <div class="swiper-wrapper product__wrapper">
-                      <!-- Slides -->
+                      
                       <div class="swiper-slide product__slide">
                         <button class="product__add">
                             <svg>
@@ -432,7 +371,7 @@
                       <div>
                           <span class="product__span">купальник</span>
                           <h3 class="product__supHeader">
-                              Nyantuy Chair
+                            итальянский стиль, фирма Olgak, размеры 80E,F,85E,F,90E,F,95E,F
                           </h3>
                           <div class="product__stars">
                               <svg class="product__star         ">
@@ -453,7 +392,7 @@
                           </div>
                       </div>
                       <span class="product__price">
-                          <sup>$</sup> 400
+                          <sup>руб</sup> 2000
                       </span>
                     </div>
                     <div class="swiper-slide product__slide">
@@ -496,7 +435,7 @@
     </section>
     <section class="materials">
         <div class="materials__content">
-        <div class="materials__left exp__right ">
+        <div class="materials__left">
             <h3 class="exp__subHeader">красивое белье</h3>
             <h2 class="exp__header">Посмотри, здесь есть не только на стройняшек, но и большие размеры</h2>
             <p class="exp__text">
@@ -511,20 +450,18 @@
            </div>
             <div class="materials__right">
                 <img src="./images/bell-1.png" alt="" class="materials__img-1">
-                <div class="materials__img-1_blur">
-                    <img src="./images/shadow-1.png" alt="shadow" class="materials__shadow-1">
-                </div>
+               
+         
                 <img src="./images/bell-2.png" alt="" class="materials__img-2">
-                <div class="materials__img-2_blur">
-                    <img src="./images/shadow-2.png" alt="shadow" class="materials__shadow-2">
-                </div>
+                
+             
                 <img src="./images/bell-3.png" alt="" class="materials__img-3">
-                <div class="materials__img-3_blur">
-                    <img src="./images/shadow-3.png" alt="shadow" class="materials__shadow-3">
-                </div>
+                
+                   
+                 
             </div>
         </div>
-        <img src="./images/pishama.jpg" alt="pishama" class="hero__back">
+       
             </section>
     <section class="test">
         <div class="container">
@@ -532,24 +469,26 @@
                 <h3 class="test__subHeader">Нежнее нежного</h3>
                 <h2 class="test__header">Пижамки из Индонезии</h2>
                 <div class="test__swiper">
-                    <!-- If we need navigation buttons -->
+                    
                     <div class="swiper-button-prev product__arrow_prev test__arrow"></div>
                     <div class="swiper-button-next product__arrow_next test__arrow"></div>
-                    <!-- Additional required wrapper -->
+                    
                     <div class="swiper-wrapper test__wrapper">
-                      <!-- Slides -->
+                      
                       <div class="swiper-slide test__slide test__slide_1">
                      <div class="test__slide_content">
                             <div class="test__content_top">
                                 <img src="./images/pigam-1.jpg" alt="photo" class="test__img">
                                 <h4 class="test__nameHeader">
-                                    Bang Upin
+                                    Пижама с шортиками
                                 </h4>
-                                <span class="test__desc">
-                                    Pedagang Asongan
-                                </span>
+                                
                                 <p class="test__comment">
-                                    “Terimakasih banyak, kini ruanganku menjadi lebih mewah dan terlihat mahal“
+                                    Пижама
+                                    Из Индонезийского хлопка♥
+                                    На ощупь просто бомба 💣
+                                    Гипоалергенно, органик
+                                    Резинка нового поколения которая не жмёт и не оставляет следов 😌
                                 </p>
                             </div>
                             <div class="product__stars test__stars">
@@ -579,9 +518,7 @@
                                 <h4 class="test__nameHeader">
                                     Пижама с шортиками
                                 </h4>
-                                <!-- <span class="test__desc">
-                                    Ibu Rumah Tangga
-                                </span> -->
+                               
                                 <p class="test__comment">
                                     Пижама
                                     Из Индонезийского хлопка♥
@@ -615,13 +552,16 @@
                           <div class="test__content_top">
                                 <img src="./images/pigam-12.jpg" alt="photo" class="test__img">
                                 <h4 class="test__nameHeader">
-                                    Mpok Ina
+                                    Пижама с шортиками  
+
                                 </h4>
-                                <span class="test__desc">
-                                    Karyawan Swasta
-                                </span>
+                               
                                 <p class="test__comment">
-                                    “Sangat terjangkau untuk kantong saya yang tidak terlalu banyak“
+                                    Пижама
+                                    Из Индонезийского хлопка♥
+                                    На ощупь просто бомба 💣
+                                    Гипоалергенно, органик
+                                    Резинка нового поколения которая не жмёт и не оставляет следов 😌
                                 </p>
                           </div>
                             <div class="product__stars test__stars">
@@ -649,13 +589,15 @@
                             <div class="test__content_top">
                                 <img src="./images/pigam-31.jpg" alt="photo" class="test__img">
                                 <h4 class="test__nameHeader">
-                                    Mpok Ina
+                                    Пижама с шортиками
                                 </h4>
-                                <span class="test__desc">
-                                    Karyawan Swasta
-                                </span>
+                                
                                 <p class="test__comment">
-                                    “Sangat terjangkau untuk kantong saya yang tidak terlalu banyak“
+                                    Пижама
+                                    Из Индонезийского хлопка♥
+                                    На ощупь просто бомба 💣
+                                    Гипоалергенно, органик
+                                    Резинка нового поколения которая не жмёт и не оставляет следов 😌
                                 </p>
                             </div>
                             <div class="product__stars test__stars">
@@ -680,10 +622,14 @@
                       </div>
                       <div class="swiper-slide test__slide test__slide_2">
                         <div class="test__slide_content">
-                            <!-- <div class="test__content_top test__arrow"> -->
+                            
                                 <img src="./images/pigam-10.jpg" alt="photo" class="test__img"> 
                                 <p class="test__comment">
-                                    “Sangat terjangkau untuk kantong saya yang tidak terlalu banyak“
+                                    Пижама
+                                    Из Индонезийского хлопка♥
+                                    На ощупь просто бомба 💣
+                                    Гипоалергенно, органик
+                                    Резинка нового поколения которая не жмёт и не оставляет следов 😌
                                 </p>
                             </div>
                             <div class="product__stars test__stars">
@@ -703,6 +649,7 @@
                                     <use xlink:href="#star"></use>
                                 </svg>
                             </div> 
+                           
 
                         </div>
                       </div>
@@ -715,54 +662,11 @@
 <div class="container">
     <div class="footer__content">
         <div class="footer__left">
-          <h3 class="footer__header">Lady Lux</h3>
+            <img src="./images/logo-Lux.jpg" alt="logo" class="header__logo">
            <p class="footer__text">Всегда можно найти повод, чтобы зайти в наш отдел "Lady Lux" и купить вещь, создающую хорошее настроение<p>
            </div>
         <div class="footer__right">
-        <ul class="footer__services">
-            <li class="footer__service">Services</li>
-            <a href="" class="footer__nav">Email Marketing</a>
-           <a href="" class="footer__nav">Campaigns</a>
-            <a href="" class="footer__nav">Branding</a>
-        </ul>
-        </div>
-        <div class="footer__right">
-        <ul class="footer__services">
-            <li class="footer__service">Furniture</li>
-            <a href="" class="footer__nav">Beds</a>
-            <a href="" class="footer__nav">Chair</a>
-            <a href="" class="footer__nav">All</a>
-        </ul>
-        </div>
-        <div class="footer__right">
-        <ul class="footer__services">
-            <li class="footer__service">Follow Us</li>
-            <span class="footer__right_nav">
-               <svg class="footer__right_nav_icon">
-                   <use xlink:href="#facebook"></use>
-                </svg>
-               <a href="" class="footer__nav">Facebook</a>
-          </span>
-            <span class="footer__right_nav">
-               <svg class="footer__right_nav_icon">
-                   <use xlink:href="#twitter"></use>
-               </svg>
-            <a href="" class="footer__nav">Twitter</a>
-           </span>
-            <span class="footer__right_nav">
-               <svg class="footer__right_nav_icon">
-                   <use xlink:href="#instagram"></use>
-                  </svg>
-            <a href="" class="footer__nav">Instagram</a>
-           </span>
-        </ul>
-        </div>
-    </div>
-<div class="footer__bottom">
-    <span class="footer__bottom__left">Copyright © 2021</span>
-    <div class="footer__bottom__right">
-        <span class="footer__bottom__right_tem">Terms & Conditions</span>
-        <span class="priv">Privacy Policy</span>
+            <div id="map" class="footer__right__map"></div>
     </div>
     </div>
 </div>

@@ -6,18 +6,22 @@
         justify-content: space-between;
         max-width: 1440px;
         margin: 0 auto;
-        padding-right: 140px;
+        padding-right: 40px;
     }
 
     &__left {
         
         padding: 56px 0 3px 0;
         position: relative;
+        margin-left: 120px;
+
     }
     &__img {
         border-radius: 50%;
+        border: 2px solid $orange;
           width: 100%;
           height: 100%;
+         
     }
 
     &__subHeader {
@@ -28,7 +32,7 @@
     }
     &__header {
         text-transform: capitalize;
-        @include font(700, 42px, $orange, 130%);
+        @include font(700, 42px, $black, 130%);
         margin-bottom: 20px;
 
     }

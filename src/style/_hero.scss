@@ -5,10 +5,9 @@
         object-fit: contain;
         position: absolute;
         z-index: -2;
-        &__img {
-            opacity: 0.5;
-            margin-bottom: 300px;
-        }
+       &__img{
+        opacity: 0.5;
+       }
     }
     
     &__content {
